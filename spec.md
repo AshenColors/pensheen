@@ -1,6 +1,7 @@
-# Pensheen Steno 0.4.3 spec
+# Pensheen Steno Technical Specification v0.4.3
 
-Basics
+## Basics
+
 A *stroke* is a figure consisting of multiple *key lines*, each representing a steno key or combination of keys, with defined dimensions. Multiple strokes defined as one translation make an *outline*.
 
 The concept of center lines and outer lines from earlier versions are no longer used.
@@ -9,7 +10,8 @@ Each key line is defined in terms of *units*, or U for short. 1U is the vertical
 
 When determining the height and width of a line, compare their start and end points relative to each other. If those points don't differ vertically, compare the outermost part of that line to the start and end points instead. 
 
-Consonants
+## Consonants
+
 The mapping of left and right hand consonants is identical. There is no reflective symmetry. Basic consonants represent only one key. Blends represent a combination of keys.
 
 All basic consonants are based on an ellipse and drawn left to right. Top row keys are drawn upwards, and bottom row keys are drawn downwards. From left to right, the first two keys in a row are drawn vertically and then horizontally; the next two keys are drawn horizontally and then vertically. Short lines are 1/2U tall and 1U wide; long lines are 1U tall and 2U wide. The outer keys, SHR-FRTS, are short lines and the inner keys, TKPW-PBLG, are long lines. -DZ are an exception and are drawn the same as -TS, but with the addition of a short hook towards their origin. 
@@ -20,7 +22,8 @@ The blends combining two vertically  adjacent keys are curves 1/2U wide with the
 
 The final type of consonant blend combines four keys that are horizontally and vertically adjacent. They are teardrop shapes drawn downward. From left to right, the first is 1U tall and wide, the second is 2U tall and 1U wide, and the third is 1.5U tall and 0.5U wide. The shape for -TSDZ is 0.5U tall and 1.5U wide.
 
-Vowels
+## Vowels
+
 The vowels are drawn left to right and, with the exception of three blends, are all based on a looping circle shape; all such circles are of equal height and width. The horizontal or vertical lines leading into and out of them, the leaders, only matter in their orientation. Their default lengths of 0.5U are not critical; they may be made shorter or longer as spacing requires. Small vowels are 0.5U in diameter and large vowels are 1U in diameter.
 
 The basic vowels have horizontal leaders. Of them, the  outer vowels, those farthest from the asterisk, are small, and the inner vowels are large. The left vowels are drawn above the leaders and the right vowels below.
