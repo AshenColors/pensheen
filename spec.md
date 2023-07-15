@@ -48,7 +48,7 @@ The blends combining two horizontally adjacent keys are, from left to right, a s
 
 The blends combining two vertically adjacent keys are curves 0.5U wide with their start and end points vertically aligned, which are drawn downwards by default but may be drawn upwards if another shape blocks it. From left to right, the first and the second curve left and are respectively 1U and 2U tall, and the third and fourth curve right and are respectively 2U and 1U tall. -TS and -DZ are exceptions that are drawn upwards by default and are 1U tall and 1U wide. -DZ is distinguished from -TS with the addition of a short hook towards their origin.
 
-The final type of consonant blend combines four keys that are horizontally and vertically adjacent. They are teardrop shapes drawn downward. From left to right, the first is 1U tall and wide, the second is 2U tall and 1U wide, and the third is 1.5U tall and 0.5U wide. The shape for -TSDZ is 0.5U tall and 1.5U wide.
+The final type of consonant blend combines four keys that are horizontally and vertically adjacent. They are teardrop shapes drawn downward. From left to right, the first is 1U tall and 0.5U wide, the second is 2U tall and 1U wide, and the third is 1.5U tall and less than 0.5U wide. The shape for -TSDZ is 0.5U tall and 1.5U wide.
 
 ## Asterisk
 
