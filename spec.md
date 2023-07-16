@@ -14,7 +14,7 @@ When determining the height and width of a line, compare their start and end poi
 
 Some lines have a *hook*, which is a small curved flourish at the end back towards the origin no more than 0.25U tall and wide.
 
-Other lines have a *tick*, which is a vertical (for the diagonals and vertical blends) or horizontal (for the three-key horizontal blends) mark at the beginning or end of a line no more than 0.25U tall and wide.
+Other lines have a *tick*, which is a vertical (for the diagonals and vertical blends) or horizontal (for the three-key horizontal blends) mark at the beginning or end of a line no more than 0.25U tall and wide. Ticks are alwas made towards the inside of a curved line. A vowel leader cannot be a tick.
 
 ## Vowels
 
