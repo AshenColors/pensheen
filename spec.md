@@ -1,4 +1,4 @@
-# Pensheen Steno Technical Specification v0.4.5
+# Pensheen Steno Technical Specification v0.4.6
 
 ## Overview 
 
@@ -11,6 +11,10 @@ All lines must be drawn as to not be confused with similar lines, except when th
 Each key line is defined in terms of *units*, or U for short. 1U is arbitrarily defined as the vertical length between ruled lines. If your paper's ruled lines are too close together, you may define it as the distance between two ruled lines, or any other length, but you *must* be consistent.
 
 When determining the height and width of a line, compare their start and end points relative to each other. If those points are aligned and would result in a height or width of 0, compare the outermost part of that line to the start and end points instead. 
+
+Some lines have a *hook*, which is a small curved flourish at the end back towards the origin no more than 0.25U tall and wide.
+
+Other lines have a *tick*, which is a vertical (for the diagonals and vertical blends) or horizontal (for the three-key horizontal blends) mark at the beginning or end of a line no more than 0.25U tall and wide.
 
 ## Vowels
 
@@ -30,11 +34,11 @@ The blend of all four vowels is a combination of the same-side two-vowel blends 
 
 The null line, or simply null, represents the absence of a vowel. It serves a similar purpose in distinguishing left and right consonants.
 
-The null is a horizonal line 1.5U long, but can be extended as spacing may require.
+The null is a horizonal line 1U long, but can be extended as spacing may require.
 
 A stroke cannot have both a vowel and a null.
 
-A trailing null may be omitted. It may also be omitted between consonants if steno order provides only one reading of the stroke, for example TPH-T. If in doubt, null it out.
+A trailing null may be omitted. It may also be omitted between consonants if steno order provides only one reading of the stroke, for example `TPH-T`. If in doubt, null it out.
 
 ## Consonants
 
@@ -42,13 +46,13 @@ The mappings of left and right hand consonants are identical. There is no reflec
 
 Basic consonants represent only one key. Blends represent a combination of keys.
 
-All basic consonants are based on an ellipse and drawn left to right. Top row keys are drawn upwards, and bottom row keys are drawn downwards. From left to right, the first two keys in a row are drawn vertically and then horizontally ("outwards"); the next two keys are drawn horizontally and then vertically ("inwards"). Short lines are 0.5U tall and 1U wide; long lines are 1U tall and 2U wide. The outer keys, SHR-FRTS, are short lines and the inner keys, TKPW-PBLG, are long lines. -DZ are an exception and are drawn the same as -TS, but with the addition of a short hook towards their origin. 
+All basic consonants are based on an ellipse and drawn left to right. Top row keys are drawn upwards, and bottom row keys are drawn downwards. From left to right, the first two keys in a row are drawn vertically and then horizontally ("outwards"); the next two keys are drawn horizontally and then vertically ("inwards"). Short lines are 0.5U tall and 1U wide; long lines are 1U tall and 2U wide. The outer keys, SHR-FRTS, are short lines and the inner keys, TKPW-PBLG, are long lines. -DZ are an exception and are drawn the same as -TS, but with a hook. 
 
-The blends combining two horizontally adjacent keys are, from left to right, a straight diagonal line 1U tall and wide, another 2U tall and wide, and a U-shape with almost straight lines and rounded corners. The three horizontally adjacent keys to the right of the first one are blended with a similar stroke 1U tall and 2U wide. All four keys (not including -DZ) are blended with a teardrop shape drawn away from the asterisk 0.5U tall and 1U wide. This is an exception to the lack of reflective symmetry.
+The blends combining two horizontally adjacent keys are, from left to right, a straight diagonal line 1U tall and 0.5 wide, another of the same size with a tick, and a U-shape 1U tall and wide. The three horizontally adjacent keys to the right of the first one are blended with a U-shape the same size with a tick. All four keys (not including -DZ) are blended with a teardrop shape drawn away from the asterisk 0.5U tall and 1U wide. This is an exception to the lack of reflective symmetry.
 
-The blends combining two vertically adjacent keys are curves 0.5U wide with their start and end points vertically aligned, which are drawn downwards by default but may be drawn upwards if another shape blocks it. From left to right, the first and the second curve left and are respectively 1U and 2U tall, and the third and fourth curve right and are respectively 2U and 1U tall. -TS and -DZ are exceptions that are drawn upwards by default and are 1U tall and 1U wide. -DZ is distinguished from -TS with the addition of a short hook towards their origin.
+The blends combining two vertically adjacent keys are curves 0.5U wide with their start and end points vertically aligned, which are drawn downwards by default but may be drawn upwards if another shape blocks it. All are 1U tall. From left to right, the first and second curve left, and the third and fourth curve right. The second and third are drawn with a tick. -TS and -DZ are exceptions that are drawn upwards by default and are 1U tall and 1U wide. -DZ is distinguished from -TS with the addition of a short hook towards their origin.
 
-The final type of consonant blend combines four keys that are horizontally and vertically adjacent. They are teardrop shapes drawn downward. From left to right, the first is 1U tall and 0.5U wide, the second is 2U tall and 1U wide, and the third is 1.5U tall and less than 0.5U wide. The shape for -TSDZ is 0.5U tall and 1.5U wide.
+The final type of consonant blend combines four keys that are horizontally and vertically adjacent. They are teardrop shapes drawn downward. From left to right, the first is 1U tall and 0.5U wide, the second is 1.5U tall and 1U wide, and the third is 1.5U tall and less than 0.5U wide. The shape for -TSDZ is 0.5U tall and 1.5U wide.
 
 ## Asterisk
 
@@ -56,11 +60,11 @@ The asterisk may be added to a stroke by drawing a short perpendicular mark thro
 
 ## Other marks
 
+Strike through mistakes with a small loop at the end, similar to the copyediting mark, or if that would be awkward circle instead.
+
 The number bar may be added to a stroke with a horizonal line of the same length above it.
 
 The + key used in some theories may be added to a stroke with a horizontal line of the same length below it.
-
-Strike through mistakes, or if that would be awkward, circle them.
 
 Numbers may be written out in Arabic numerals such that they cannot be mistaken for strokes.
 
